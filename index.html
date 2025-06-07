@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#apropos">À propos de moi</a></li>
+            <li><a href="#recent">Récent</a></li>
+            <li><a href="#avenir">À venir</a></li>
+            <li><a href="#projets">Mes projets</a></li>
+            <li><a href="#bilan">Bilan personnel</a></li>
+        </ul>
+    </nav>
+
+    <h1 class="titreC">Hélène Vizoso</h1>
+    <h2 class="chapeau">Etudiante en Bachelor Universitaire de Technologie en Science des Données.</h2>
+
+    <div class="image-et-texte">
+        <img src="helene.png" alt="Photo d'Hélène" class="photo">
+        <div class="rectangle1">
+            Bonjour, je suis Hélène Vizoso. Étudiante en deuxième année de Science des données à Niort !
+            Dans ce portfolio vous trouverez mon CV, une section à propos de moi, mes différents projets
+            et un retour sur mon année scolaire passée.
+        </div>
+    </div>
+
+    <div class="bouton-cv">
+        <a href="CV Hélène VIZOSO.pdf" download>
+            <button>Télécharger mon CV</button>
+        </a>
+    </div>
+
+    <h2 id="apropos" class="titre-apropos">À propos de moi</h2>
+
+    <div class="conteneur-centre">
+        <div class="zone-rectangulaire">
+            <h2>La musique</h2>
+            <h3>Mon album préféré</h3>
+            <img src="wolf.jpg" alt="Album Wolf" class="icone">
+            <p>WOLF - Tyler, the Creator</p>
+        </div>
+        <div class="zone-rectangulaire">
+            <h2>Les films/séries</h2>
+            <h3>Mon film préféré</h3>
+            <img src="memento.jpg" alt="Memento" class="icone">
+            <p>Memento - Christopher Nolan</p>
+        </div>
+        <div class="zone-rectangulaire">
+            <h2>Les jeux-vidéos</h2>
+            <h3>Jeu en cours</h3>
+            <img src="eldenring.jpg" alt="Elden Ring" class="icone">
+            <p>Elden Ring</p>
+        </div>
+    </div>
+
+    <h2 id="recent" class="titre-apropos">Récent</h2>
+
+    <div class="conteneur-projets">
+        <div class="carte-projet">
+            <h3>Stage à la CPAM 79</h3>
+            <img src="fmd.png" alt="fmd" class="icone_projet">
+            <p>Dans le cadre de ma deuxième année dans le BUT Science des données, j'ai effectué un stage de 10 semaines au service CGS (Contrôle de Gestion et Statistiques) de la CPAM 79. J'y ai eu l'occasion de réaliser deux projets en particulier. Un sur la mise à jour d'une publication annuelle sur les CPTS (Communautés professionnelles territoriales de santé) et un autre sur la création d'un tableau de bord dynamique et automatisé.</p>
+        </div>
+    </div>
+
+    <h2 id="avenir" class="titre-apropos">À venir</h2>
+
+    <div class="conteneur-projets">
+        <div class="carte-projet">                          
+            <h3>Alternance à la CPAM 79</h3>
+            <p>Cette fois-ci, dans le cadre de ma troisième année, j'ai fait le choix de faire une alternance. Mon stage à la CPAM 79 s'était bien passé et m'étant bien intégrée dans le service CGS, la poursuite de mon travail là bas semblait cohérente.</p>
+        </div>
+    </div>
+
+    <h2 id="projets" class="titre-apropos">Mes projets</h2>
+    <h3>Voici quelque projets réalisés au cours des deux premières années de mon BUT.</h3>
+
+    <div class="conteneur-projets">
+        <div class="carte-projet">
+            <h3>Projet Reporting</h3>
+            <img src="reporting.png" alt="Reporting" class="icone_projet">
+            <p>Dans le cadre de cette SAE, j’ai travaillé en binôme. L’objectif était de créer un gestionnaire de notes dynamique. Celui-ci devait permettre, entre autres, de calculer automatiquement la moyenne en fonction des notes saisies, et d’afficher une indication sur le passage ou non en deuxième année. Le projet a été réalisé à l’aide d’Excel et de VBA.</p>
+        </div>
+
+        <div class="carte-projet">
+            <h3>Projet Gestion de fichier</h3>
+            <img src="gestionfichier.png" alt="gestion" class="icone_projet">
+            <p>Dans cet projet réalisé en binôme, l’objectif était de transformer un fichier CSV en supprimant certaines colonnes superflues. Ce travail a été effectué en Python. La principale difficulté du projet résidait dans la manipulation des données, qui étaient organisées sous forme de listes de listes.</p>
+        </div>
+
+        <div class="carte-projet">
+            <h3>Projet Martinique</h3>
+            <img src="martinique.png" alt="martinique" class="icone_projet">
+            <p>Pour ce projet, j’ai travaillé seule. L’objectif était de rédiger un compte rendu décrivant la situation démographique et le marché du travail d’un territoire donné. Pour cela, nous disposions de données issues de l’INSEE. L’analyse a révélé une baisse record de la population, un taux de chômage particulièrement élevé, ainsi qu’un nombre important de fonctionnaires. Les résultats ont été présentés à l’aide de graphiques réalisés sous Excel.</p>
+        </div>
+
+        <div class="carte-projet">
+            <h3>Projet régression linéaire</h3>
+            <img src="regression.png" alt="regression" class="icone_projet">
+            <p>L'objectif de cette SAÉ est d'exploiter les données du fichier d'entraînement afin d’identifier le modèle de prédiction le plus performant pour estimer le prix de vente des appartements et maisons à Paris au premier semestre 2023. Le modèle retenu sera ensuite appliqué aux logements du fichier test pour en prédire les prix.</p>
+        </div>
+
+        <div class="carte-projet">
+            <h3>Projet site web dynamique en Php</h3>
+            <img src="cinescope.png" alt="cine" class="icone_projet">
+            <p>Pour ce projet, nous étions par groupe de 3. Nous avions pour objectif de créer un site web en HTML, Php et JavaScript. Notre site permet de visualiser des données sur des films sous forme de tableau et de graphiques et d'ajouter des films à la base de données.</p>
+        </div>
+
+        <div class="carte-projet">
+            <h3>Projet Application Web</h3>
+            <img src="airbnb.png" alt="airbnb" class="icone_projet">
+            <p>Nous étions par groupe de 4 pour ce projet. L'objectif était de créer une application web grâce au framework Plotly de JavaScript. Nous avons créé plusieurs onglets différents avec des graphiques et des cartes chloroplèthes.</p>
+        </div>
+    </div>
+
+    <h2 id="bilan" class="titre-apropos">Bilan personnel - 2024/2025</h2>
+
+    <div class="highlighted-text">
+        Cette deuxième année de BUT en Science des données a marqué une étape importante dans mon parcours universitaire. Elle a été rythmée par des apprentissages techniques plus poussés, une mise en pratique régulière à travers des projets, et surtout une immersion significative dans le monde professionnel grâce à mon stage.
+
+        Tout au long de l’année, j’ai consolidé mes compétences en statistiques, programmation, modélisation de données, et analyse exploratoire. J’ai également travaillé avec des outils professionnels tels que Excel, R, ou Tableau, tout en développant une approche rigoureuse de la gestion et de la visualisation de données.
+
+        L’un des temps forts de l’année a été mon stage de 10 semaines au sein de la CPAM 79. Cette expérience m’a permis d’appliquer concrètement les notions vues en cours sur des données réelles, dans un environnement professionnel stimulant. Ce stage a non seulement renforcé mes compétences techniques, mais aussi mes qualités humaines : autonomie, capacité d’adaptation, communication en équipe.
+
+        La reconnaissance de mon travail s’est traduite par une proposition d’alternance dans la même entreprise pour ma troisième année, que j’ai acceptée avec enthousiasme. Cela me permettra de continuer à progresser sur des projets de plus grande envergure, tout en approfondissant ma spécialisation et en préparant plus sereinement mon insertion professionnelle.
+
+        Même si certains cours ou projets ont pu être exigeants, cette année m’a permis de mieux me connaître : j’ai pris confiance en mes capacités à apprendre vite, à résoudre des problèmes complexes, et à m’impliquer dans des projets de groupe. J’ai aussi identifié des axes d’amélioration, notamment en gestion du temps et en synthèse écrite.
+
+        Je termine donc cette année avec une réelle motivation pour la suite. L’alternance représente pour moi une opportunité de transition progressive entre le monde académique et le monde professionnel, que je suis prêt(e) à saisir pleinement.</p>
+    </div>
+
+    <div class="copyright">
+        &copy; 2025 Hélène Vizoso.
+    </div>
+</body>
+</html>
