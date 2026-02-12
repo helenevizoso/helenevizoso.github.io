@@ -7,7 +7,7 @@
 
 :root {
     --primary-color: #60a5fa; /* bleu clair */
-    --secondary-color: #3b82f6; /* bleu un peu plus foncé */
+    --secondary-color: #11346d; /* bleu un peu plus foncé */
     --accent-color: #f97316; /* orange */
     --text-on-dark: #e6eef9; /* texte clair */
     --text-muted: #a9bfdd; /* texte moins visible */
@@ -20,6 +20,8 @@
 
 html {
     scroll-behavior: smooth;
+    height: 100%;
+    background: var(--bg-dark);
 }
 
 body {
@@ -27,6 +29,17 @@ body {
     line-height: 1.6;
     color: var(--text-on-dark);
     background: radial-gradient(1200px 600px at 10% 10%, rgba(9,34,66,0.6), transparent), var(--bg-dark);
+    min-height: 100vh;
+}
+
+/* Force dark theme pour toutes les préférences système */
+@media (prefers-color-scheme: light) {
+    html {
+        background: var(--bg-dark);
+    }
+    body {
+        background: radial-gradient(1200px 600px at 10% 10%, rgba(9,34,66,0.6), transparent), var(--bg-dark);
+    }
 }
 
 /* ==== NAVIGATION ==== */
