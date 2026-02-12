@@ -3,146 +3,320 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
+    <title>Hélène Vizoso - Portfolio Data Science</title>
     <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
-
-    <nav>
-        <ul>
-            <li><a href="#apropos">À propos de moi</a></li>
-            <li><a href="#recent">Récent</a></li>
-            <li><a href="#avenir">À venir</a></li>
-            <li><a href="#projets">Mes projets</a></li>
-            <li><a href="#bilan">Bilan personnel</a></li>
-        </ul>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">HV</div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Accueil</a></li>
+                <li><a href="#about" class="nav-link">À propos</a></li>
+                <li><a href="#skills" class="nav-link">Compétences</a></li>
+                <li><a href="#projects" class="nav-link">Projets</a></li>
+                <li><a href="#experience" class="nav-link">Expérience</a></li>
+                <li><a href="#future" class="nav-link">Objectifs</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <h1 class="titreC">Hélène Vizoso</h1>
-    <h2 class="chapeau">Etudiante en Bachelor Universitaire de Technologie en Science des Données.</h2>
-
-    <div class="image-et-texte">
-        <img src="helene.png" alt="Photo d'Hélène" class="photo">
-        <div class="rectangle1">
-            Bonjour, je suis Hélène Vizoso. Étudiante en deuxième année de Science des données à Niort !
-            Dans ce portfolio vous trouverez mon CV, une section à propos de moi, mes différents projets
-            et un retour sur mon année scolaire passée.
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <img src="helene.png" alt="Photo Hélène Vizoso" class="hero-img">
+            <div class="hero-text">
+                <h1>Hélène Vizoso</h1>
+                <p class="hero-subtitle">Étudiante en Bachelor Universitaire de Technologie<br>Science des Données • Niort</p>
+                <div class="hero-buttons">
+                    <a href="CV Hélène VIZOSO.pdf" download class="btn btn-primary">Télécharger mon CV</a>
+                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="bouton-cv">
-        <a href="CV Hélène VIZOSO.pdf" download>
-            <button>Télécharger mon CV</button>
-        </a>
-    </div>
-
-    <h2 id="apropos" class="titre-apropos">À propos de moi</h2>
-
-    <div class="conteneur-centre">
-        <div class="zone-rectangulaire">
-            <h2>La musique</h2>
-            <h3>Mon album préféré</h3>
-            <img src="wolf.jpg" alt="Album Wolf" class="icone">
-            <p>WOLF - Tyler, the Creator</p>
+    <!-- À propos Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">À propos de moi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Mon parcours</h3>
+                    <p>Actuellement en deuxième année de BUT en Science des Données à l'IUT de Niort, j'ai développé une expertise en traitement et analyse de données, modélisation statistique, et visualisation. Mon parcours m'a permis d'acquérir des compétences techniques solides en Python, R, Excel, et bases de données, tout en conservant une approche analytique et rigoureuse.</p>
+                    <p>Dotée d'une grande capacité d'adaptation et d'une curiosité constante pour les technologies émergentes, j'aime résoudre des problèmes complexes en utilisant les données comme levier d'action. Mon objectif est de contribuer à des projets à impact, où l'analyse de données crée de la valeur tangible.</p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-box">
+                        <h4>📍 Localisation</h4>
+                        <p>Nouvelle-Aquitaine, France</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>🎓 Études</h4>
+                        <p>BUT Science des Données - IUT Niort</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>🎯 Spécialité</h4>
+                        <p>Analytics & Data Visualization</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="zone-rectangulaire">
-            <h2>Les films/séries</h2>
-            <h3>Mon film préféré</h3>
-            <img src="memento.jpg" alt="Memento" class="icone">
-            <p>Memento - Christopher Nolan</p>
+    </section>
+
+    <!-- Compétences Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Compétences</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programmation & Scripting</h3>
+                    <ul class="skill-list">
+                        <li>Python (pandas, NumPy, scikit-learn)</li>
+                        <li>R (ggplot2, dplyr)</li>
+                        <li>SQL</li>
+                        <li>VBA Excel</li>
+                        <li>PHP & JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Données & Analytics</h3>
+                    <ul class="skill-list">
+                        <li>Nettoyage et préparation de données</li>
+                        <li>Analyse statistique exploratoire</li>
+                        <li>Modélisation prédictive</li>
+                        <li>Régression linéaire & Machine Learning</li>
+                        <li>Tableaux de bord dynamiques</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Outils & Frameworks</h3>
+                    <ul class="skill-list">
+                        <li>Excel avancé</li>
+                        <li>Tableau / Power BI</li>
+                        <li>Plotly (JavaScript)</li>
+                        <li>Git & GitHub</li>
+                        <li>Bases de données relationnelles</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <ul class="skill-list">
+                        <li>Autonomie et proactivité</li>
+                        <li>Travail en équipe</li>
+                        <li>Communication claire</li>
+                        <li>Gestion de projet</li>
+                        <li>Résolution de problèmes</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="zone-rectangulaire">
-            <h2>Les jeux-vidéos</h2>
-            <h3>Jeu en cours</h3>
-            <img src="eldenring.jpg" alt="Elden Ring" class="icone">
-            <p>Elden Ring</p>
+    </section>
+
+    <!-- Projets Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projets</h2>
+            
+            <h3 class="subsection-title">Projets Réalisés</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h4>Gestionnaire de Notes Dynamique</h4>
+                        <span class="project-tags"><span class="tag">Excel</span> <span class="tag">VBA</span></span>
+                    </div>
+                    <p class="project-desc">Projet réalisé en binôme servant de gestionnaire de notes. Calcul automatique des moyennes, prédiction du passage en année suivante, interface interactive.</p>
+                    <p class="project-skills"><strong>Compétences:</strong> VBA, Excel avancé, Automatisation</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h4>Transformation de Données CSV</h4>
+                        <span class="project-tags"><span class="tag">Python</span></span>
+                    </div>
+                    <p class="project-desc">Transformation d'un fichier CSV par suppression de colonnes superflues. Travail sur la manipulation de listes de listes en Python pour optimiser la structure des données.</p>
+                    <p class="project-skills"><strong>Compétences:</strong> Python, Manipulation de données, Optimisation</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h4>Analyse Démographique - Martinique</h4>
+                        <span class="project-tags"><span class="tag">Excel</span> <span class="tag">INSEE</span></span>
+                    </div>
+                    <p class="project-desc">Analyse approfondie de la situation démographique et du marché du travail en Martinique. Mise en évidence d'une baisse record de population, taux de chômage élevé, forte présence de fonctionnaires.</p>
+                    <p class="project-skills"><strong>Compétences:</strong> Analyse statistique, Visualisation de données, Interprétation d'indicateurs</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h4>Prédiction de Prix Immobiliers Paris</h4>
+                        <span class="project-tags"><span class="tag">Python</span> <span class="tag">ML</span></span>
+                    </div>
+                    <p class="project-desc">Modèle prédictif pour estimer les prix immobiliers à Paris en 2023. Exploitation de données réelles, sélection du meilleur modèle, application à un fichier test.</p>
+                    <p class="project-skills"><strong>Compétences:</strong> Régression linéaire, Machine Learning, scikit-learn</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h4>Site Web Dynamique - Cinescope</h4>
+                        <span class="project-tags"><span class="tag">PHP</span> <span class="tag">JavaScript</span></span>
+                    </div>
+                    <p class="project-desc">Application web en groupe de 3 pour visualiser et gérer des données sur les films. Tableaux dynamiques, graphiques interactifs, ajout/modification en base de données.</p>
+                    <p class="project-skills"><strong>Compétences:</strong> PHP, JavaScript, Développement web, Bases de données</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h4>Application Web - Plotly Dashboard</h4>
+                        <span class="project-tags"><span class="tag">JavaScript</span> <span class="tag">Plotly</span></span>
+                    </div>
+                    <p class="project-desc">Projet en groupe de 4. Création d'une application web avec Plotly. Multiples onglets, graphiques interactifs, cartes choroplèthes pour l'analyse territoriale.</p>
+                    <p class="project-skills"><strong>Compétences:</strong> JavaScript, Plotly, Cartographie de données, Design UX</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h4>Enseignement Excel - Projet Territoire</h4>
+                        <span class="project-tags"><span class="tag">Pédagogie</span> <span class="tag">Excel</span></span>
+                    </div>
+                    <p class="project-desc">Projet en groupe de 4. Cours dispensés à une classe de 4ème sur les bases d'Excel. Accompagnement des élèves vers la création autonome de data visualisations. Concours inter-groupes à l'IUT.</p>
+                    <p class="project-skills"><strong>Compétences:</strong> Communication, Pédagogie, Leadership, Excel avancé</p>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">Projets à Développer</h3>
+            <p class="projects-intro">Futurs projets à intégrer au portfolio :</p>
+            <div class="projects-grid">
+                <div class="project-card placeholder">
+                    <div class="project-header">
+                        <h4>Projet 1 - [Domaine]</h4>
+                        <span class="project-tags"><span class="tag">À compléter</span></span>
+                    </div>
+                    <p class="project-desc">Description du projet à ajouter...</p>
+                    <p class="project-skills"><strong>Compétences:</strong> À définir</p>
+                </div>
+
+                <div class="project-card placeholder">
+                    <div class="project-header">
+                        <h4>Projet 2 - [Domaine]</h4>
+                        <span class="project-tags"><span class="tag">À compléter</span></span>
+                    </div>
+                    <p class="project-desc">Description du projet à ajouter...</p>
+                    <p class="project-skills"><strong>Compétences:</strong> À définir</p>
+                </div>
+
+                <div class="project-card placeholder">
+                    <div class="project-header">
+                        <h4>Projet 3 - [Domaine]</h4>
+                        <span class="project-tags"><span class="tag">À compléter</span></span>
+                    </div>
+                    <p class="project-desc">Description du projet à ajouter...</p>
+                    <p class="project-skills"><strong>Compétences:</strong> À définir</p>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <h2 id="recent" class="titre-apropos">Récent</h2>
+    <!-- Expérience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Expérience Professionnelle</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-date">2024-2025</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Stagiaire en Data Analytics</h3>
+                        <p class="timeline-company">CPAM 79 - Service CGS (Contrôle de Gestion et Statistiques)</p>
+                        <ul class="timeline-tasks">
+                            <li>Mise à jour d'une publication annuelle sur les CPTS (Communautés Professionnelles Territoriales de Santé)</li>
+                            <li>Création d'un tableau de bord dynamique et automatisé pour le suivi des indicateurs</li>
+                            <li>Analyse de données santé et élaboration de rapports statistiques</li>
+                            <li>Autonomie et prise en charge de projets à fort enjeu</li>
+                        </ul>
+                        <p class="timeline-note">Débouchant sur une proposition d'alternance pour la 3ème année</p>
+                    </div>
+                </div>
 
-    <div class="conteneur-projets">
-        <div class="carte-projet">
-            <h3>Stage à la CPAM 79</h3>
-            <img src="fmd.png" alt="fmd" class="icone_projet">
-            <p>Dans le cadre de ma deuxième année dans le BUT Science des données, j'ai effectué un stage de 10 semaines au service CGS (Contrôle de Gestion et Statistiques) de la CPAM 79. J'y ai eu l'occasion de réaliser deux projets en particulier. Un sur la mise à jour d'une publication annuelle sur les CPTS (Communautés professionnelles territoriales de santé) et un autre sur la création d'un tableau de bord dynamique et automatisé.</p>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-date">2025-2026</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Alternant en Data Analytics</h3>
+                        <p class="timeline-company">CPAM 79 - Service CGS</p>
+                        <ul class="timeline-tasks">
+                            <li>Poursuite des projets initiés lors du stage</li>
+                            <li>Approfondissement de l'expertise en analyse de données</li>
+                            <li>Contribution à des projets de plus grande envergure</li>
+                            <li>Intégration progressive vers le monde professionnel</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <h2 id="avenir" class="titre-apropos">À venir</h2>
-
-    <div class="conteneur-projets">
-        <div class="carte-projet">                          
-            <h3>Alternance à la CPAM 79</h3>
-            <p>Cette fois-ci, dans le cadre de ma troisième année, j'ai fait le choix de faire une alternance. Mon stage à la CPAM 79 s'était bien passé et m'étant bien intégrée dans le service CGS, la poursuite de mon travail là bas semblait cohérente.</p>
+    <!-- Objectifs Section -->
+    <section id="future" class="future">
+        <div class="container">
+            <h2 class="section-title">Objectifs & Perspectives</h2>
+            <div class="objectives-grid">
+                <div class="objective-card">
+                    <h3>Court Terme (6-12 mois)</h3>
+                    <ul>
+                        <li>Exceller dans mon alternance à la CPAM 79</li>
+                        <li>Maîtriser complètement les outils d'analytics avancés</li>
+                        <li>Valider mon diplôme de BUT</li>
+                        <li>Contribuer à des projets à impact</li>
+                    </ul>
+                </div>
+                <div class="objective-card">
+                    <h3>Moyen Terme (1-2 ans)</h3>
+                    <ul>
+                        <li>Poursuivre l'intégration au sein d'une équipe de data analysts</li>
+                        <li>Élargir ma spécialisation vers le Machine Learning appliqué</li>
+                        <li>Construire un réseau professionnel solide</li>
+                        <li>Développer une expertise métier dans le domaine de la santé</li>
+                    </ul>
+                </div>
+                <div class="objective-card">
+                    <h3>Long Terme (3-5 ans)</h3>
+                    <ul>
+                        <li>Devenir un analyste de données confirmé et fiable</li>
+                        <li>Potentiellement poursuivre en Master en Data Science</li>
+                        <li>Contribuer à des projets de transformation digitale</li>
+                        <li>Partager mes connaissances et mentorat auprès de juniors</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <h2 id="projets" class="titre-apropos">Mes projets</h2>
-    <h3>Voici quelque projets réalisés au cours des deux premières années de mon BUT.</h3>
-
-    <div class="conteneur-projets">
-        <div class="carte-projet">
-            <h3>Projet Reporting</h3>
-            <img src="reporting.png" alt="Reporting" class="icone_projet">
-            <p>Dans le cadre de cette SAE, j’ai travaillé en binôme. L’objectif était de créer un gestionnaire de notes dynamique. Celui-ci devait permettre, entre autres, de calculer automatiquement la moyenne en fonction des notes saisies, et d’afficher une indication sur le passage ou non en deuxième année. Le projet a été réalisé à l’aide d’Excel et de VBA.</p>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Me Contacter</h2>
+            <div class="contact-content">
+                <p>Je suis disponible pour discuter de mes projets, de mes expériences et d'opportunités de collaboration.</p>
+                <div class="contact-info">
+                    <a href="mailto:helenev@example.com" class="contact-link">✉️ Email</a>
+                    <a href="https://linkedin.com" class="contact-link" target="_blank">🔗 LinkedIn</a>
+                    <a href="https://github.com" class="contact-link" target="_blank">💻 GitHub</a>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="carte-projet">
-            <h3>Projet Gestion de fichier</h3>
-            <img src="gestionfichier.png" alt="gestion" class="icone_projet">
-            <p>Dans cet projet réalisé en binôme, l’objectif était de transformer un fichier CSV en supprimant certaines colonnes superflues. Ce travail a été effectué en Python. La principale difficulté du projet résidait dans la manipulation des données, qui étaient organisées sous forme de listes de listes.</p>
-        </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Hélène Vizoso. Portfolio dynamique pour présentation orale.</p>
+    </footer>
 
-        <div class="carte-projet">
-            <h3>Projet Martinique</h3>
-            <img src="martinique.png" alt="martinique" class="icone_projet">
-            <p>Pour ce projet, j’ai travaillé seule. L’objectif était de rédiger un compte rendu décrivant la situation démographique et le marché du travail d’un territoire donné. Pour cela, nous disposions de données issues de l’INSEE. L’analyse a révélé une baisse record de la population, un taux de chômage particulièrement élevé, ainsi qu’un nombre important de fonctionnaires. Les résultats ont été présentés à l’aide de graphiques réalisés sous Excel.</p>
-        </div>
-
-        <div class="carte-projet">
-            <h3>Projet régression linéaire</h3>
-            <img src="regression.png" alt="regression" class="icone_projet">
-            <p>L'objectif de cette SAÉ est d'exploiter les données du fichier d'entraînement afin d’identifier le modèle de prédiction le plus performant pour estimer le prix de vente des appartements et maisons à Paris au premier semestre 2023. Le modèle retenu sera ensuite appliqué aux logements du fichier test pour en prédire les prix.</p>
-        </div>
-
-        <div class="carte-projet">
-            <h3>Projet site web dynamique en Php</h3>
-            <img src="cinescope.png" alt="cine" class="icone_projet">
-            <p>Pour ce projet, nous étions par groupe de 3. Nous avions pour objectif de créer un site web en HTML, Php et JavaScript. Notre site permet de visualiser des données sur des films sous forme de tableau et de graphiques et d'ajouter des films à la base de données.</p>
-        </div>
-
-        <div class="carte-projet">
-            <h3>Projet Application Web</h3>
-            <img src="airbnb.png" alt="airbnb" class="icone_projet">
-            <p>Nous étions par groupe de 4 pour ce projet. L'objectif était de créer une application web grâce au framework Plotly de JavaScript. Nous avons créé plusieurs onglets différents avec des graphiques et des cartes chloroplèthes.</p>
-        </div>
-
-        <div class="carte-projet">
-            <h3>Projet besoins du territoire</h3>
-            <img src="territoire.png" alt="territoire" class="icone_projet">
-            <p>Pour ce projet, nous étions par groupe de 4. Nous avons donné cours à une classe de 4ème afin de leur apprendre les bases d'Excel pour pouvoir produire en toute autonomie une data visualisation. Une fois les cours finis, les élèves ont participé un concours qui a eu lieu au sein de notre IUT.</p>
-        </div>
-    </div>
-
-    <h2 id="bilan" class="titre-apropos">Bilan personnel - 2024/2025</h2>
-
-    <div class="highlighted-text">
-        Cette deuxième année de BUT en Science des données a marqué une étape importante dans mon parcours universitaire. Elle a été rythmée par des apprentissages techniques plus poussés, une mise en pratique régulière à travers des projets, et surtout une immersion significative dans le monde professionnel grâce à mon stage.
-
-        Tout au long de l’année, j’ai consolidé mes compétences en statistiques, programmation, modélisation de données, et analyse exploratoire. J’ai également travaillé avec des outils professionnels tels que Excel, R, ou Tableau, tout en développant une approche rigoureuse de la gestion et de la visualisation de données.
-
-        L’un des temps forts de l’année a été mon stage de 10 semaines au sein de la CPAM 79. Cette expérience m’a permis d’appliquer concrètement les notions vues en cours sur des données réelles, dans un environnement professionnel stimulant. Ce stage a non seulement renforcé mes compétences techniques, mais aussi mes qualités humaines : autonomie, capacité d’adaptation, communication en équipe.
-
-        La reconnaissance de mon travail s’est traduite par une proposition d’alternance dans la même entreprise pour ma troisième année, que j’ai acceptée avec enthousiasme. Cela me permettra de continuer à progresser sur des projets de plus grande envergure, tout en approfondissant ma spécialisation et en préparant plus sereinement mon insertion professionnelle.
-
-        Même si certains cours ou projets ont pu être exigeants, cette année m’a permis de mieux me connaître : j’ai pris confiance en mes capacités à apprendre vite, à résoudre des problèmes complexes, et à m’impliquer dans des projets de groupe. J’ai aussi identifié des axes d’amélioration, notamment en gestion du temps et en synthèse écrite.
-
-        Je termine donc cette année avec une réelle motivation pour la suite. L’alternance représente pour moi une opportunité de transition progressive entre le monde académique et le monde professionnel, que je suis prêt(e) à saisir pleinement.</p>
-    </div>
-
-    <div class="copyright">
-        &copy; 2025 Hélène Vizoso.
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>
