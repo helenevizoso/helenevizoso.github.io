@@ -6,25 +6,13 @@
 }
 
 :root {
-    --primary-color: #2563eb;
-    --secondary-color: #1e40af;
-    --accent-color: #f97316;
-    --text-dark: #1f2937;
-    --text-light: #6b7280;
-    --bg-light: #f9fafb;
-    --border-radius: 12px;
-    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
-
-:root {
-    --primary-color: #0b3b84; /* bleu foncé principal */
-    --secondary-color: #062a57; /* bleu très foncé */
-    --accent-color: #60a5fa; /* accent plus bleu clair */
-    --text-on-dark: #e6eef9; /* texte principal sur fond sombre */
-    --text-muted: #a9bfdd;
+    --primary-color: #60a5fa; /* bleu clair */
+    --secondary-color: #3b82f6; /* bleu un peu plus foncé */
+    --accent-color: #f97316; /* orange */
+    --text-on-dark: #e6eef9; /* texte clair */
+    --text-muted: #a9bfdd; /* texte moins visible */
     --bg-dark: #07122a; /* fond global sombre */
-    --card-bg: linear-gradient(180deg, rgba(14,30,60,0.6), rgba(8,18,36,0.9));
+    --bg-card: #0f2545; /* fond cartes un peu plus clair */
     --border-radius: 12px;
     --shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
     --shadow-lg: 0 14px 40px rgba(0, 0, 0, 0.7);
