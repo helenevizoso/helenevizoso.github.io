@@ -17,11 +17,24 @@
     --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
+:root {
+    --primary-color: #0b3b84; /* bleu foncé principal */
+    --secondary-color: #062a57; /* bleu très foncé */
+    --accent-color: #60a5fa; /* accent plus bleu clair */
+    --text-on-dark: #e6eef9; /* texte principal sur fond sombre */
+    --text-muted: #a9bfdd;
+    --bg-dark: #07122a; /* fond global sombre */
+    --card-bg: linear-gradient(180deg, rgba(14,30,60,0.6), rgba(8,18,36,0.9));
+    --border-radius: 12px;
+    --shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+    --shadow-lg: 0 14px 40px rgba(0, 0, 0, 0.7);
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
-    color: var(--text-dark);
-    background-color: #fff;
+    color: var(--text-on-dark);
+    background: radial-gradient(1200px 600px at 10% 10%, rgba(9,34,66,0.6), transparent), var(--bg-dark);
 }
 
 /* ==== NAVIGATION ==== */
