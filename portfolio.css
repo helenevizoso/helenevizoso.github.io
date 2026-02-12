@@ -6,13 +6,13 @@
 }
 
 :root {
-    --primary-color: #60a5fa; /* bleu clair */
-    --secondary-color: #11346d; /* bleu un peu plus foncé */
-    --accent-color: #f97316; /* orange */
-    --text-on-dark: #e6eef9; /* texte clair */
-    --text-muted: #a9bfdd; /* texte moins visible */
-    --bg-dark: #07122a; /* fond global sombre */
-    --bg-card: #0f2545; /* fond cartes un peu plus clair */
+    --primary-color: #a89ed0; /* violet clair */
+    --secondary-color: #5a5a8f; /* violet foncé */
+    --accent-color: #ff9af5; /* magenta rose */
+    --text-on-dark: #e6e0f0; /* texte clair */
+    --text-muted: #a9a0c0; /* texte moins visible */
+    --bg-dark: #2a2a4a; /* fond global sombre violet-bleu */
+    --bg-card: #3a3a5f; /* fond cartes violet-bleu foncé */
     --border-radius: 12px;
     --shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
     --shadow-lg: 0 14px 40px rgba(0, 0, 0, 0.7);
