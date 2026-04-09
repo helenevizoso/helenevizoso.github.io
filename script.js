@@ -70,7 +70,7 @@ const projectData = {
             'Gestion des validations, des seuils de passage et des retards éventuels.'
         ],
         team: 'Travail en binôme : conception, tests et ajustements des formules ensemble.',
-        images: ['img/gestionfichier.png']
+        images: ['img/reporting.png']
     },
     'project-2': {
         title: 'Transformation de Données CSV',
@@ -130,7 +130,7 @@ const projectData = {
             'Conception UX centrée sur la clarté et l’ergonomie.'
         ],
         team: 'Travail en équipe de 4 avec répartition des graphiques et du design.',
-        images: ['img/territoire.png']
+        images: ['img/airbnb.png']
     },
     'project-7': {
         title: 'Enseignement Excel - Projet Territoire',
@@ -142,7 +142,7 @@ const projectData = {
             'Animation d’un concours inter-groupes à l’IUT.'
         ],
         team: 'Groupe de 4, avec répartition des interventions et du support pédagogique.',
-        images: ['img/reporting.png']
+        images: ['img/territoire.png']
     },
     'project-8': {
         title: 'CHATBOT LLM',
