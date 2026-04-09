@@ -43,7 +43,7 @@
             <div class="about-content">
                 <div class="about-text">
                     <h3>Mon parcours</h3>
-                    <p>Je suis actuellement en troisième année du BUT Science des données à l'IUT de Niort et alternante à la CPAM des Deux-Sèvres dans le service statistique jusqu'en juillet 2026.</p>
+                    <p>Je suis actuellement en troisième année du BUT Science des données à l'IUT de Niort et alternante à la CPAM des Deux-Sèvres dans le service CGS du 01/09/2025 au 31/07/2026.</p>
                 </div>
                 <div class="about-highlights">
                     <div class="highlight-box">
@@ -119,7 +119,7 @@
             
             <h3 class="subsection-title">Projets Réalisés</h3>
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card" data-project="project-1" tabindex="0" role="button" aria-label="Ouvrir le détail du projet Gestionnaire de Notes Dynamique">
                     <div class="project-header">
                         <h4>Gestionnaire de Notes Dynamique</h4>
                         <span class="project-tags"><span class="tag">Excel</span> <span class="tag">VBA</span></span>
@@ -128,7 +128,7 @@
                     <p class="project-skills"><strong>Compétences:</strong> VBA, Excel avancé, Automatisation</p>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-project="project-2" tabindex="0" role="button" aria-label="Ouvrir le détail du projet Transformation de Données CSV">
                     <div class="project-header">
                         <h4>Transformation de Données CSV</h4>
                         <span class="project-tags"><span class="tag">Python</span></span>
@@ -137,7 +137,7 @@
                     <p class="project-skills"><strong>Compétences:</strong> Python, Manipulation de données, Optimisation</p>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-project="project-3" tabindex="0" role="button" aria-label="Ouvrir le détail du projet Analyse Démographique - Martinique">
                     <div class="project-header">
                         <h4>Analyse Démographique - Martinique</h4>
                         <span class="project-tags"><span class="tag">Excel</span> <span class="tag">INSEE</span></span>
@@ -146,7 +146,7 @@
                     <p class="project-skills"><strong>Compétences:</strong> Analyse statistique, Visualisation de données, Interprétation d'indicateurs</p>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-project="project-4" tabindex="0" role="button" aria-label="Ouvrir le détail du projet Prédiction de Prix Immobiliers Paris">
                     <div class="project-header">
                         <h4>Prédiction de Prix Immobiliers Paris</h4>
                         <span class="project-tags"><span class="tag">Python</span> <span class="tag">ML</span></span>
@@ -155,7 +155,7 @@
                     <p class="project-skills"><strong>Compétences:</strong> Régression linéaire, Machine Learning, scikit-learn</p>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-project="project-5" tabindex="0" role="button" aria-label="Ouvrir le détail du projet Site Web Dynamique - Cinescope">
                     <div class="project-header">
                         <h4>Site Web Dynamique - Cinescope</h4>
                         <span class="project-tags"><span class="tag">PHP</span> <span class="tag">JavaScript</span></span>
@@ -164,7 +164,7 @@
                     <p class="project-skills"><strong>Compétences:</strong> PHP, JavaScript, Développement web, Bases de données</p>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-project="project-6" tabindex="0" role="button" aria-label="Ouvrir le détail du projet Application Web - Plotly Dashboard">
                     <div class="project-header">
                         <h4>Application Web - Plotly Dashboard</h4>
                         <span class="project-tags"><span class="tag">JavaScript</span> <span class="tag">Plotly</span></span>
@@ -173,7 +173,7 @@
                     <p class="project-skills"><strong>Compétences:</strong> JavaScript, Plotly, Cartographie de données, Design UX</p>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-project="project-7" tabindex="0" role="button" aria-label="Ouvrir le détail du projet Enseignement Excel - Projet Territoire">
                     <div class="project-header">
                         <h4>Enseignement Excel - Projet Territoire</h4>
                         <span class="project-tags"><span class="tag">Pédagogie</span> <span class="tag">Excel</span></span>
@@ -182,7 +182,7 @@
                     <p class="project-skills"><strong>Compétences:</strong> Communication, Pédagogie, Leadership, Excel avancé</p>
                 </div>
                 
-                <div class="project-card">
+                <div class="project-card" data-project="project-8" tabindex="0" role="button" aria-label="Ouvrir le détail du projet CHATBOT LLM">
                     <div class="project-header">
                         <h4>CHATBOT LLM</h4>
                         <span class="project-tags"><span class="tag">Python</span></span>
@@ -191,7 +191,7 @@
                     <p class="project-skills"><strong>Compétences:</strong> Python, Traitement du langage naturel, Intégration d'API</p>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-project="project-9" tabindex="0" role="button" aria-label="Ouvrir le détail du projet CHALLENGE DATAVIZ">
                     <div class="project-header">
                         <h4>CHALLENGE DATAVIZ</h4>
                         <span class="project-tags"><span class="tag">PowerBI</span> <span class="tag">Excel</span></span>
@@ -201,6 +201,30 @@
                 </div>
             </div>
 
+            <div class="project-modal-overlay hidden" id="project-modal-overlay">
+                <div class="project-modal" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+                    <button class="modal-close" id="project-modal-close" aria-label="Fermer le détail du projet">×</button>
+                    <div class="modal-header">
+                        <h3 id="project-modal-title"></h3>
+                        <p class="modal-subtitle" id="project-modal-subtitle"></p>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-section">
+                            <h4>Description</h4>
+                            <p id="project-modal-description"></p>
+                        </div>
+                        <div class="modal-section">
+                            <h4>Points clés</h4>
+                            <ul id="project-modal-points"></ul>
+                        </div>
+                        <div class="modal-section">
+                            <h4>Équipe & rôle</h4>
+                            <p id="project-modal-team"></p>
+                        </div>
+                        <div class="modal-section modal-images" id="project-modal-images"></div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </section>
@@ -233,12 +257,12 @@
                         <span class="timeline-date">2025-2026</span>
                     </div>
                     <div class="timeline-content">
-                        <h3>Alternant en Data Analytics</h3>
+                        <h3>Alternance - Technicienne statistique à la CPAM 79</h3>
                         <p class="timeline-company">CPAM 79 - Service CGS</p>
                         <ul class="timeline-tasks">
                             <li>Poursuite des projets initiés lors du stage</li>
-                            <li>Approfondissement de l'expertise en analyse de données</li>
-                            <li>Contribution à des projets de plus grande envergure</li>
+                            <li>Traitement des récurrentes hebdommadaire et mensuelle</li>
+                            <li>Création d'une macro de compilation en VBA</li>
                             <li>Intégration progressive vers le monde professionnel</li>
                         </ul>
                     </div>
@@ -263,7 +287,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2025 Hélène Vizoso. Portfolio dynamique.</p>
+        <p>&copy; 2026 Hélène Vizoso. Portfolio dynamique.</p>
     </footer>
 
     <script src="script.js"></script>

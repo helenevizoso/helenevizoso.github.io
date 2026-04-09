@@ -343,15 +343,132 @@ section {
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     padding: 1.5rem;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
     border: 1px solid rgba(96, 165, 250, 0.2);
+    cursor: pointer;
 }
 
-.project-card:hover {
+.project-card:hover,
+.project-card:focus-visible {
     transform: translateY(-10px);
     box-shadow: var(--shadow-lg);
     border-color: var(--primary-color);
+    outline: none;
 }
+
+.project-card:focus-visible {
+    box-shadow: 0 0 0 4px rgba(255, 154, 245, 0.35), var(--shadow-lg);
+}
+
+.project-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(12, 18, 45, 0.88);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    z-index: 2000;
+}
+
+.project-modal-overlay.hidden {
+    display: none;
+}
+
+.project-modal {
+    width: min(100%, 940px);
+    max-height: min(100%, 820px);
+    overflow-y: auto;
+    background: rgba(21, 28, 63, 0.98);
+    border-radius: calc(var(--border-radius) + 4px);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid rgba(255, 154, 245, 0.15);
+    padding: 2rem;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 154, 245, 0.12);
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background 0.25s;
+}
+
+.modal-close:hover {
+    background: rgba(255, 154, 245, 0.24);
+}
+
+.modal-header h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.modal-subtitle {
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.modal-body {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.modal-section h4 {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+}
+
+.modal-section p,
+.modal-section li {
+    color: var(--text-muted);
+    line-height: 1.8;
+}
+
+.modal-section ul {
+    list-style: disc inside;
+    margin: 0;
+    padding-left: 1rem;
+}
+
+.modal-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.modal-images img {
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+    min-height: 160px;
+    border: 1px solid rgba(255, 154, 245, 0.15);
+}
+
+@media (max-width: 768px) {
+    .project-modal {
+        padding: 1.5rem;
+    }
+
+    .modal-header h3 {
+        font-size: 1.6rem;
+    }
+
+    .modal-images {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 .project-card.placeholder {
     background: rgba(11, 59, 132, 0.1);
