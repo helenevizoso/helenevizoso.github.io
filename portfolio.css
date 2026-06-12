@@ -213,6 +213,22 @@ section {
     padding-top: 40px;
 }
 
+.year-section {
+    margin-bottom: 2.5rem;
+}
+
+.year-title {
+    font-size: 1.35rem;
+    color: var(--accent-color);
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgba(255, 154, 245, 0.25);
+}
+
+.year-section .projects-grid {
+    margin-bottom: 0;
+}
+
 /* ==== ABOUT SECTION ==== */
 .about {
     background: var(--bg-dark);
