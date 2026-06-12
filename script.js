@@ -167,6 +167,19 @@ const projectData = {
         ],
         team: 'Projet individuel avec feedback de l’équipe, puis présentation en groupe.',
         images: ['img/fmd.png']
+    },
+    'project-10': {
+        title: 'Projet Qlik Sense',
+        subtitle: 'Qlik Sense • Business Intelligence',
+        description: 'Création d’un tableau de bord interactif avec Qlik Sense afin d’explorer des données métier, filtrer les indicateurs et mettre en avant des tendances clés.',
+        points: [
+            'Conception d’une interface de visualisation claire et intuitive.',
+            'Mise en place de filtres et de vues dynamiques pour l’analyse.',
+            'Transformation des données en indicateurs exploitables pour une prise de décision.',
+            'Valorisation des insights grâce à une narration visuelle efficace.'
+        ],
+        team: 'Projet individuel avec une approche orientée données et expérience utilisateur.',
+        images: ['img/qlik.png']
     }
 };
 
