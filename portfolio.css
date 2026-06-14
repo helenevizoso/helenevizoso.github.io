@@ -383,6 +383,9 @@ section {
     transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
     border: 1px solid rgba(96, 165, 250, 0.2);
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .project-card:hover,
@@ -560,7 +563,8 @@ section {
 .project-difficulty {
     color: var(--text-on-dark);
     font-size: 0.9rem;
-    margin: 0.75rem 0 0;
+    margin-top: auto;
+    padding-top: 0.75rem;
 }
 
 /* ==== EXPERIENCE SECTION ==== */
