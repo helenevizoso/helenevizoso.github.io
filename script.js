@@ -81,7 +81,7 @@ const projectData = {
             'Manipulation de listes de listes pour optimiser les structures de données.',
             'Préparation d’un jeu de données propre pour une analyse ultérieure.'
         ],
-        team: 'Projet individuel avec revue de code et optimisation des performances.',
+        team: 'Travail en binôme',
         images: ['img/gestionfichier.png']
     },
     'project-3': {
@@ -93,7 +93,7 @@ const projectData = {
             'Représentation visuelle des résultats sur Excel.',
             'Interprétation des indicateurs démographiques et socio-économiques.'
         ],
-        team: 'Recherche et analyse individuelle, avec validation finale par le groupe classe.',
+        team: 'Travail en binôme',
         images: ['img/martinique.png']
     },
     'project-4': {
@@ -105,7 +105,7 @@ const projectData = {
             'Utilisation de la régression linéaire pour prédire les prix.',
             'Évaluation des performances sur un jeu de test réel.'
         ],
-        team: 'Projet individuel avec présentation des résultats en groupe.',
+        team: 'Travail en binôme',
         images: ['img/regression.png']
     },
     'project-5': {
@@ -117,7 +117,7 @@ const projectData = {
             'Intégration de tableaux dynamiques et de filtres.',
             'Connexion à une base de données pour lire et écrire des informations.'
         ],
-        team: 'Groupe de 3 personnes : répartition entre backend, frontend et tests.',
+        team: 'Groupe de 3 personnes : répartition entre les différents onglets et fonctionnalités du site.',
         images: ['img/cinescope.png']
     },
     'project-6': {
@@ -129,7 +129,7 @@ const projectData = {
             'Organisation des données en onglets thématiques.',
             'Conception UX centrée sur la clarté et l’ergonomie.'
         ],
-        team: 'Travail en équipe de 4 avec répartition des graphiques et du design.',
+        team: 'Travail en équipe de 4 avec répartition des onglets et des graphiques.',
         images: ['img/airbnb.png']
     },
     'project-7': {
@@ -141,7 +141,7 @@ const projectData = {
             'Accompagnement des élèves dans la création de graphiques simples.',
             'Animation d’un concours inter-groupes à l’IUT.'
         ],
-        team: 'Groupe de 4, avec répartition des interventions et du support pédagogique.',
+        team: 'Groupe de 4, avec répartition lors de la préparation des cours.',
         images: ['img/territoire.png']
     },
     'project-8': {
@@ -153,7 +153,7 @@ const projectData = {
             'Intégration d’un modèle de langage pour la compréhension des questions.',
             'Test et ajustement de la qualité des réponses.'
         ],
-        team: 'Projet individuel avec suivi des tests utilisateurs.',
+        team: 'Projet individuel',
         images: []
     },
     'project-9': {
@@ -165,8 +165,8 @@ const projectData = {
             'Comparaison de scénarios et extraction des insights clés.',
             'Présentation orientée décisionnel auprès du jury.'
         ],
-        team: 'Projet individuel avec feedback de l’équipe, puis présentation en groupe.',
-        images: ['img/fmd.png']
+        team: 'Projet en groupe de 4',
+        images: ['img/challengedataviz.jpeg']
     },
     'project-10': {
         title: 'Projet Qlik Sense',
@@ -178,7 +178,7 @@ const projectData = {
             'Transformation des données en indicateurs exploitables pour une prise de décision.',
             'Valorisation des insights grâce à une narration visuelle efficace.'
         ],
-        team: 'Projet individuel avec une approche orientée données et expérience utilisateur.',
+        team: 'Projet individuel',
         images: ['img/qlik.png']
     }
 };
