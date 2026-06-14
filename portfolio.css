@@ -557,6 +557,12 @@ section {
     margin: 0;
 }
 
+.project-difficulty {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin: 0.75rem 0 0;
+}
+
 /* ==== EXPERIENCE SECTION ==== */
 .experience {
     background: var(--bg-dark);
