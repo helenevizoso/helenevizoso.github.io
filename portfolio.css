@@ -558,7 +558,7 @@ section {
 }
 
 .project-difficulty {
-    color: var(--text-muted);
+    color: var(--text-on-dark);
     font-size: 0.9rem;
     margin: 0.75rem 0 0;
 }
