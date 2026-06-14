@@ -180,6 +180,18 @@ const projectData = {
         ],
         team: 'Projet individuel',
         images: ['img/qlik.png']
+    },
+    'project-11': {
+        title: 'Réseau de neurones - Reconnaissance d’images',
+        subtitle: 'Python • Intelligence artificielle',
+        description: 'Projet de réseau de neurones dans lequel nous avons dû programmer deux algorithmes afin de reconnaître différents types d’images à l’issue des deux processus.',
+        points: [
+            'Programmation de deux algorithmes de classification d’images.',
+            'Mise en place d’un réseau de neurones pour l’apprentissage à partir d’images.',
+            'Évaluation de la capacité du modèle à reconnaître les catégories d’images attendues.'
+        ],
+        team: 'Travail en binôme',
+        images: []
     }
 };
 
