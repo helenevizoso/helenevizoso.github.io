@@ -19,7 +19,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background:
     linear-gradient(rgba(20, 8, 28, 0.38), rgba(20, 8, 28, 0.38)),
-    /* Ajoute ici ton image de fond */
+    background-image: img('img/image.png')
     linear-gradient(180deg, #f5d5de, #eed8f3);
   background-size: cover;
   background-position: center;
